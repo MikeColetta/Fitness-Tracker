@@ -10,11 +10,9 @@ const exerciseSchema = new Schema ({
     name: {
         type: String,
         trim: true,
-        required: "Enter a name for transaction"
       },
       duration: {
         type: Number,
-        required: "Enter a time"
       },
       weight: {
         type: Number,
