@@ -14,11 +14,9 @@ router.get("/api/workouts", (req, res) => {
         },
     ])
         .then(data => {
-            console.log(data)
             res.json(data);
         })
         .catch(err => {
-            console.log(err)
             res.status(500).json(err);
             
         });
