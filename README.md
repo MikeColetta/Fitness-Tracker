@@ -4,7 +4,7 @@
 
 ## Description
     
-I created the back-end of a fitness tracker website. The user can create workouts and add exercises to already created workouts. The website also tracks and provides statistics of previous workouts. 
+I created the back-end of a fitness tracker website. The user can create workouts, add exercises to already existing workouts, and view statistics of past workouts. 
     
 ## Table of Contents
 1. [Installation](#installation)
@@ -21,6 +21,8 @@ I created the back-end of a fitness tracker website. The user can create workout
 
 ![Screenshot1](./public/images/Screenshot1.JPG)
 ![Screenshot2](./public/images/Screenshot2.JPG)
+![Screenshot3](./public/images/Screenshot3.JPG)
+
 
 
 ## License
