@@ -18,7 +18,7 @@ router.get("/api/workouts", (req, res) => {
         })
         .catch(err => {
             res.status(500).json(err);
-            
+
         });
 });
 
@@ -49,8 +49,15 @@ router.post("/api/workouts", (req, res) => {
 
 //getWorkoutsInRange
 router.get("/api/workouts/range", (req, res) => {
-    Workout.find()
-        .sort({ date: -1 })
+    Workout.aggregate([
+        {
+            $addFields: {
+                totalDuration: {
+                    $sum: '$exercises.duration',
+                },
+            },
+        },
+    ])
         .then(data => {
             res.json(data);
         })
